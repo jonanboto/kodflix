@@ -13,11 +13,14 @@ class App extends Component {
           <div className="title">HTML5</div>
           <div className="title">CSS3</div>
         </div>
+        <br /><br /><br />
         <div className="container">
           <div className="title">Node.js</div>
           <div className="title">MongoDB</div>
           <div className="title">Heroku</div>
         </div>
+        <br /><br /><br />
+        <br /><br /><br />
         <img src={moviecover} alt='Rumble in the Jungle' />
         <br /><br /><br />
       </div>
