@@ -11,8 +11,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <br /><br /><br />
-        <br /><br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
         <div className="container">
           <div className="item">
             <img src={ali} alt='Muhammad Ali' />
@@ -24,7 +29,9 @@ class App extends Component {
             <img src={joplin} alt='Janis Joplin playing guitar' />
           </div>
         </div>
-        <br /> <br /> <br />
+        <br />
+        <br />
+
         <div className="container">
           <div className="item">
             <img src={lincoln} alt='Abraham Lincoln set back in colour' />
@@ -36,9 +43,9 @@ class App extends Component {
             <img src={stpancras} alt='St Pancras railway station architecture' />
           </div>
         </div>
-        <br /> <br /> <br />
-        <br /> <br /> <br />
-        <br /> <br /> <br />
+        <br />
+        <br />
+
       </div >
     );
   }
