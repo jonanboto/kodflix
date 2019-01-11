@@ -14,12 +14,15 @@ img {
   flex: 1;
   padding: 5px;
   position: relative;
+  border: 1px solid green;
+  overflow: hidden;
 }
 
 .titleoverlay {
-  display: none;
+  transition: bottom cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.3s;  
+  /* used chrome dev tools to change from ease to cubic-bezier transtion */
   position: absolute;
-  bottom: 40%;
+  bottom: -50px;
   left: 10%;
   width: 80%;
   background-color: yellow;
@@ -28,6 +31,8 @@ img {
 
 .item:hover .titleoverlay {
   display: block;
+  opacity: 0.8;
+  bottom: 40%;
 }
 
 @media only screen and (max-width: 600px) {
