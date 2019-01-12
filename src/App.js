@@ -1,18 +1,19 @@
-//importing react component
 import React, { Component } from 'react';
-//importing new components
-import Gallery from './Gallery';
-//importing the CSS file and instructions
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Gallery from './components/Gallery';
+import Details from './components/DetailsPage';
 import './App.css';
 
 //primary code for the kodflix App
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className='App'>
-          <br /><br /><br /><br />
-          <Gallery />
+          <Route exact path='/' component={Gallery}/>
+          <Route exact path='/details' component={Details}/>
       </div>
+      </Router>
     );
   }
 }
