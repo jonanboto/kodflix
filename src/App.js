@@ -28,8 +28,8 @@ class App extends Component {
         </div>
           <br /><br />
         <div className='container'>
-          <TvShow name='A nation scarred' logo={lincoln} />
-          <TvShow name='A life less ordinary' logo={retrotv} />
+          <TvShow name='A Nation Scarred' logo={lincoln} />
+          <TvShow name='A Life less Ordinary' logo={retrotv} />
           <TvShow name='Beauty from bricks' logo={stpancras} />
         </div>
       </div>
