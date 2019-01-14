@@ -32,7 +32,7 @@ img {
 .item:hover .titleoverlay {
   display: block;
   opacity: 0.8;
-  bottom: 40%;
+  bottom: 30%;
 }
 
 @media only screen and (max-width: 600px) {
