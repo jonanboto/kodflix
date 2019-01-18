@@ -13,15 +13,12 @@ export default function Gallery() {
     return (
       <div>
         <div className='container'>
-          <TvShow id='1' name='Rumble in the Jungle' logo={ali} />
-          <TvShow id='2' name='Graced with Life' logo={elephant} />
-          <TvShow id='3' name='Summer of Love' logo={joplin} />
-        </div>
-          <br /><br />
-        <div className='container'>
-          <TvShow id='4' name='A Nation Scarred' logo={lincoln} />
-          <TvShow id='5' name='A Life less Ordinary' logo={retrotv} />
-          <TvShow id='6' name='Beauty from Bricks' logo={stpancras} />
+          <TvShow id='rumbleinthejungle' name='Rumble in the Jungle' logo={ali} />
+          <TvShow id='gracedwithlife' name='Graced with Life' logo={elephant} />
+          <TvShow id='summeroflove' name='Summer of Love' logo={joplin} />
+          <TvShow id='anationscarred' name='A Nation Scarred' logo={lincoln} />
+          <TvShow id='alifelessordinary' name='A Life less Ordinary' logo={retrotv} />
+          <TvShow id='beautyfrombricks' name='Beauty from Bricks' logo={stpancras} />
         </div>
       </div>
     );
