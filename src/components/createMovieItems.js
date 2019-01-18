@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-export default function TvShow(props) {
+export default function MovieItem(props) {
     return (
       <Link to={`/${props.id}`} div className='item'>
         <img src={props.logo} alt={`logo for ${props.name}`} />
