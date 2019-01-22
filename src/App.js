@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Gallery from './components/createGallery';
-import DetailsPage from './components/createDetailsPage';
+import MovieDetails from './components/createMovieDetails';
 import './App.css';
 
 //primary code for the kodflix App
@@ -11,7 +11,7 @@ class App extends Component {
       <Router>
       <div className='App'>
           <Route exact path='/' component={Gallery}/>
-          <Route exact path='/:details' component={DetailsPage}/>
+          <Route exact path='/:details' component={MovieDetails}/>
       </div>
       </Router>
     );
