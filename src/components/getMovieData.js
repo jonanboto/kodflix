@@ -7,11 +7,11 @@ import stpancras from './imagesfolder/stpancras.jpg'
 
 export default function getMovieData()  {
     return [
-      { id: 'rumbleinthejungle', name: 'Rumble in the Jungle', logo: ali },
-      { id: 'gracedwithlife', name: 'Graced with Life', logo: elephant },
-      { id: 'summeroflove', name: 'Summer of Love', logo: joplin },
-      { id: 'anationscarred', name: 'A Nation Scarred', logo: lincoln },
-      { id: 'alifelessordinary', name: 'A Life less Ordinary', logo: retrotv },
-      { id: 'beautyfrombricks', name: 'Beauty from Bricks', logo: stpancras },
+      { id: 'rumbleinthejungle', name: 'Rumble in the Jungle', logo: ali, summary: `This is a placeholder for a summary of the movie`},
+      { id: 'gracedwithlife', name: 'Graced with Life', logo: elephant, summary: `This is a placeholder for a summary of the movie`},
+      { id: 'summeroflove', name: 'Summer of Love', logo: joplin, summary: `This is a placeholder for a summary of the movie`},
+      { id: 'anationscarred', name: 'A Nation Scarred', logo: lincoln, summary: `This is a placeholder for a summary of the movie`},
+      { id: 'alifelessordinary', name: 'A Life less Ordinary', logo: retrotv, summary: `This is a placeholder for a summary of the movie`},
+      { id: 'beautyfrombricks', name: 'Beauty from Bricks', logo: stpancras, summary: `This is a placeholder for a summary of the movie`},
     ];
   }

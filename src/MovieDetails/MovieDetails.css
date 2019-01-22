@@ -1,0 +1,15 @@
+.MovieDetails .content {
+    display: flex;
+    background-color: green;
+}
+
+/* .MovieDetails .content .text,
+.MovieDetails .content .image {
+
+} */
+
+@media screen and (max-width: 600px) {
+    .MovieDetails .content {
+      flex-direction: column;
+    }
+}
