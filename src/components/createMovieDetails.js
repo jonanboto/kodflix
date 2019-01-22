@@ -1,14 +1,14 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import MovieData from './getMovieData';
 
 export default class MovieDetails extends React.Component {
-  
+
   constructor() {
     super();
     this.state = {
-        movie: {}
+      movie: {}
     };
   }
 
@@ -20,12 +20,15 @@ export default class MovieDetails extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <h1>{this.state.movie.name}</h1>
-        <Link to='/'><h3>Back to homepage</h3></Link>
-      </div>
-    );
+    if (this.state.movie === undefined) {
+        return <Redirect to='not-found' />;
+    } else {
+        return (
+          <div>
+            <h1>{this.state.movie.name}</h1>
+            <Link to='/'><h3>Back to homepage</h3></Link>
+          </div>
+         );
+    }
   }
 }
-  
