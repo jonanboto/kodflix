@@ -7,7 +7,7 @@ export default class MovieDetails extends React.Component {
   constructor() {
     super();
     this.state = {
-        welcomeMessage: 'Welcome to the details page, WIP!'
+        welcomeMessage: 'Welcome Jonan the details page, WIP!'
     };
   }
 
