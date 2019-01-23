@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Gallery from './components/createGallery';
-import MovieDetails from './components/createMovieDetails';
+import MovieDetails from './MovieDetails/MovieDetails';
+import NotFound from './components/NotFound';
+
 import './App.css';
 
-//primary code for the kodflix App
+//primary code to render the kodflix App
 class App extends Component {
   render() {
     return (
       <Router>
       <div className='App'>
-          <Route exact path='/' component={Gallery}/>
-          <Route exact path='/:details' component={MovieDetails}/>
+          <Switch>
+            <Route exact path='/' component={Gallery}/>
+            <Route exact path='/not-found' component={NotFound}/>
+            <Route exact path='/:movieId' component={MovieDetails}/>
+          </Switch>
       </div>
       </Router>
     );
