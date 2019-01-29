@@ -1,40 +1,88 @@
+html {
+  min-height: 100%;
+  background-color: black;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
 
 img {
-  width: 90%; 
-  }
+  width: 100%;
+}
+
+.header {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.linethrough {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+
+.footer {
+  color: white;
+  text-align: right;
+  margin-right: 20px;
+}
 
 .container {
-  /* display: flex;
-  flex-wrap: wrap; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item {
-  /* flex: 1;
-  flex-basis: 150px; */
-  padding: 5px;
+  box-sizing: border-box;
   position: relative;
-  border: 1px solid green;
   overflow: hidden;
 }
 
 .titleoverlay {
-  transition: bottom cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.3s;  
-  /* used chrome dev tools to change from ease to cubic-bezier transtion */
   position: absolute;
-  bottom: -50px;
-  left: 10%;
-  width: 80%;
-  background-color: yellow;
+  left: 5%;
+  bottom: 15px;
+  width: 90%;
+  background-color: lightgrey;
+  color: black;
   opacity: 0.8;
+  animation: slidein 2s ease-out 0.5s running;
+  transition: bottom cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.5s;
+}
+
+@keyframes slidein {
+  from { margin-bottom: -25%; }
+  to { margin-bottom: 25px; }
 }
 
 .item:hover .titleoverlay {
-  display: block;
-  opacity: 0.8;
-  bottom: 30%;
+  bottom: 100px;
+  position: absolute;
+}
+
+/* For tablets or large phones: */
+@media only screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .item {
+    width: 49%;
+  }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 992px) {
+  .item {
+    width: 33%;
+  }
+  .titleoverlay {
+    animation: none;
+    bottom: -25px;
+    }
 }

@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom'
-import MovieData from '../components/getMovieData';
+import MovieData from '../MovieData/MovieData';
 import './MovieDetails.css'
+
+import '../App.css';
 
 export default class MovieDetails extends React.Component {
 
@@ -24,20 +26,30 @@ export default class MovieDetails extends React.Component {
     if (this.state.movie === undefined) {
       return <Redirect to='not-found' />;
     } else {
-      return (
+      return (     
         <div className='MovieDetails'>
-          <h1>{this.state.movie.name}</h1>
+          
+          <div className='header'>
+            <h1>Nice choice.</h1>
+          </div>
+          
           <div className='content'>
-            <div className='text'>
+            <div className='titleoverlay2'>
+              <h2>{this.state.movie.name}</h2>
+            </div>
+            <div className='summary'>
               {this.state.movie.summary}
             </div>
             <img
-              className='image'
               src={this.state.movie.logo}
               alt={this.state.movie.name}
             />
           </div>
-          <Link to='/'><h3>Back to homepage</h3></Link>
+
+          <Link to='/' div className='footer'>
+              <h1>Back to homepage</h1>
+          </Link>
+          
         </div>
       );
     }
