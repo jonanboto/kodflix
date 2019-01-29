@@ -35,19 +35,19 @@ export default class MovieDetails extends React.Component {
           
           <div className='content'>
             <div className='titleoverlay2'>
-              <h2>{this.state.movie.name}</h2>
+              <h3>{this.state.movie.name}</h3>
             </div>
             <div className='summary'>
               {this.state.movie.summary}
             </div>
-            <img
+            <img className='image'
               src={this.state.movie.logo}
               alt={this.state.movie.name}
             />
           </div>
 
           <Link to='/' div className='footer'>
-              <h1>Back to homepage</h1>
+              <h2>Back to homepage</h2>
           </Link>
           
         </div>

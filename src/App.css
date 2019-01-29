@@ -15,7 +15,7 @@ img {
 .header {
   color: white;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 10%;
 }
 
 .linethrough {
@@ -26,14 +26,14 @@ img {
 
 .footer {
   color: white;
-  text-align: right;
-  margin-right: 20px;
+  text-align: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .item {
@@ -73,6 +73,9 @@ img {
   }
   .item {
     width: 49%;
+  }
+  .header {
+    margin-left: 20px;
   }
 }
 
