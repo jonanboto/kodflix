@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import MovieGallery from './MovieGallery/MovieGallery_pg';
-import MovieDetails from './MovieDetails/MovieDetails_pg';
+import MovieGallery from './MovieGallery_pg';
+import MovieDetails from './MovieDetails_pg';
 import NotFound from './NotFound';
 
-import './App.css';
+import '../css/App.css';
 
 //primary code to render the kodflix App
 class App extends Component {

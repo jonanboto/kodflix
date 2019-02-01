@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom'
-import MovieData from '../MovieData/MovieData';
-import './MovieDetails.css'
+import MovieData from '../data/MovieData';
+import '../css/MovieDetails.css'
 
-import '../App.css';
+import '../css/App.css';
 
 export default class MovieDetails extends React.Component {
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import MovieItem from './MovieItems';
-import getMovieData from '../MovieData/MovieData';
+import MovieItems from '../data/MovieItems';
+import MovieData from '../data/MovieData';
 
 export default function MovieGallery() {
     return (
@@ -12,8 +12,8 @@ export default function MovieGallery() {
         
         <div className='container'>
           {
-          getMovieData().map(movie => (
-            <MovieItem
+          MovieData().map(movie => (
+            <MovieItems
               key={movie.id}
               id={movie.id}
               name={movie.name}

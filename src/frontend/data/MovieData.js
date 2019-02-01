@@ -5,7 +5,7 @@ import lincoln from './CoverImages/lincoln.jpg'
 import retrotv from './CoverImages/retrotv.jpg'
 import stpancras from './CoverImages/stpancras.jpg'
 
-export default function getMovieData()  {
+export default function MovieData()  {
     return [
       { id: 'rumbleinthejungle', name: 'Rumble in the Jungle', logo: ali, summary: `This is a placeholder for a summary of the movie. Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci`},
       { id: 'gracedwithlife', name: 'Graced with Life', logo: elephant, summary: `This is a placeholder for a summary of the movie. Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci`},
