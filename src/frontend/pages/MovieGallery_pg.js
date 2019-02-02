@@ -7,7 +7,7 @@ export default function MovieGallery() {
       <div>
         
         <div className='header'>
-          <h1>Hello papa and queen ella</h1>
+          <h1>Time to <span className='linethrough'>Net</span>flix.</h1>
         </div>
         
         <div className='container'>
