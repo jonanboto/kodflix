@@ -20,6 +20,10 @@ export default class MovieDetails extends React.Component {
     let movie = MovieData()
       .find(movie => movie.id === movieId);
     this.setState({ movie });
+    fetch('/rest/movies')
+      .then(function (response) {
+        return response.json();
+      });
   }
 
   render() {
