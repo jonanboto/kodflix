@@ -5,7 +5,7 @@ const movieData = require('./movieData');
 
 const path = require('path');
 
-app.listen(port, () => console.log(`Example app listening on port ${path.join(__dirname, '../../build')}!`));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 app.get('/rest/movies', (req, res) => res.send(movieData()));
 
 app.use(express.static(path.join(__dirname, '../../build')));
